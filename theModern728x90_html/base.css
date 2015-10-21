@@ -1,0 +1,353 @@
+/* 
+
+	G5Framework
+
+	=======================================
+
+	TODO : Concatenate & Minify CSS Pre-production!
+	
+	=======================================
+
+	00 		Reset
+	01 		Global Classes
+	02 		Form Elements
+	03 		Modal
+	04 		Tabs
+
+			05 		Wrapper
+			06 		Header
+			07 		Content
+			08 		Footer
+
+*/
+
+@import "reset.css";
+
+@import "global-classes.css";
+
+
+/* 
+
+	For projects IE8+
+
+	Natural Box Model [IE8+] // Position inline blocks properly
+	*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: text-top; }
+
+*/
+
+*, 
+*:before, 
+*:after { vertical-align: text-top; }
+
+/* HTML // Body */
+html, body { height: 90px; }
+html { font: normal normal 100%/1em arial, sans-serif; }
+body { background: #FFF; color: #b9b5b3; font: normal normal 0.875em/1em arial, sans-serif; }
+
+/* Wrapper */ 
+/*#wrapper {overflow:hidden; margin: 0 auto; padding: 0; position: relative; width: 300px; height: 250px; border: 1px solid #333;}*/	
+/*Removed boarder because Double Click Studio puts in a border*/
+#wrapper {overflow:hidden; 
+	margin: 0 auto; 
+	padding: 0; 
+	position: relative; 
+	width: 726px;
+	height: 88px;
+	border: 1px solid #333;
+	/*****************height for ISI screen grab********************/
+	/*height: 1500px;*/
+}
+
+.wrap-max { margin: 0; padding: 0; width: 100%; }
+
+/*visibility: hidden;*/
+/* Content // Base */ 
+.content{width: 728px; 
+	height: 90px; 
+	/*****************height for ISI screen grab********************/
+   /* height: 1500px; */
+	display: block;
+}
+
+.imageone{
+background-image: url("bridge.png");
+width:180px;
+height: 90px;
+margin-left:auto;
+margin-right:auto;
+top: 0px;
+left: 548px;
+position: absolute;
+}
+.imagetwo{
+background-image: url("pool.png");
+width:180px;
+height: 90px;
+margin-left:auto;
+margin-right:auto;
+top: 0px;
+left: 548px;
+position: absolute;
+}
+.imagethree{
+background-image: url("view.png");
+width:180px;
+height: 90px;
+margin-left:auto;
+margin-right:auto;
+top: 0px;
+left: 548px;
+position: absolute;
+}
+.imagefour{
+  background-image: url("buildingwedge.png");
+  width: 117px;
+  height: 82px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 6px;
+  left: 380px;
+  position: absolute;
+}
+.logo{
+background-image: url("logo.png");
+width:180px;
+height: 90px;
+margin-left:auto;
+margin-right:auto;
+top: 0px;
+left: 0px;
+position: absolute;
+}
+.cta{
+  /*background-image: url("learnmore.png");*/
+ background-color: #e33832;
+  width: 120px;
+  height: 21px;
+  top: 60px;
+  left: 551px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
+}
+.ctatext{
+  font-family: arial, 
+  sans-serif; 
+  font-size: 14px; 
+  text-transform: uppercase;
+  text-align: center;
+  /*vertical-align: middle;*/
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 4px; 
+} 
+hr { 
+  display: block;
+  position: absolute;
+  top: 79px;
+  left: 42;
+  width: 217px;
+  border-style: inset;
+  /*border-width: 1px;*/
+} 
+
+.headlinetx1 {
+	font-family: arial, 
+	sans-serif; 
+	font-size: 30px; 
+	position: absolute;
+	text-transform: uppercase;
+    color: #494747;
+    top:38px;
+    margin-left: 150px;
+    letter-spacing: 1px;
+    float:left;
+}
+
+.half {
+	margin-left: 0px;
+	float:left;
+}
+.the {
+	margin-left: 10px;
+	float:left;
+}
+.rent {
+	margin-left: 10px;
+	float:left;
+}
+
+.headlinetx2 {
+	font-family: arial, 
+	sans-serif; 
+	font-size: 30px; 
+	position: absolute;
+	text-transform: uppercase;
+    color: #494747;
+    top:38px;
+    margin-left: 120px;
+    letter-spacing: 1px;
+    float:left;
+}
+.twice {
+	margin-left: 0px;
+	float:left;
+}
+.the2 {
+	margin-left: 10px;
+	float:left;
+}
+.luxury {
+	margin-left: 10px;
+	float:left;
+}
+.headlinetx3 {
+	  font-family: arial, 
+ sans-serif;
+  font-size: 26px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #494747;
+  top: 23px;
+  margin-left: 120px;
+  letter-spacing: 1px;
+
+
+}
+
+.headlinetx4 {
+	font-family: arial, sans-serif;
+  font-size: 26px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #494747;
+  margin-left: 125px;
+  letter-spacing: 1px;
+  top: 54px;
+
+}
+/*last frame*/
+.headlinetx5 {
+  font-family: arial, sans-serif;
+  font-size: 29px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #494747;
+  margin-left: 213px;
+  letter-spacing: 1px;
+  top: 10px;
+  line-height: 27px;
+}
+.headlinetx6 {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #494747;
+  margin-left: 213px;
+   letter-spacing: 6px;
+
+  top: 66px;
+}
+.headlinetx7 {
+  font-family: arial, sans-serif;
+  font-size: 24px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #494747;
+  margin-left: 522px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  top: 9px;
+  text-align: center;
+}
+/*.headlinetx8 {
+   font-family: arial, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  text-transform: uppercase;
+  color: #494747;
+  margin-left: 15px;
+  letter-spacing: 1px;
+  top: 94px;
+}*/
+wrapperline{
+float: left;
+}
+.pushright {
+    margin-left: 210px;
+}
+.pushmid{
+    margin-left: 22px;
+}
+.content .bg-exit{
+  /*display: inline-block; */
+  width: 728px; 
+  height: 90px; 
+  float: left;
+  
+  }
+
+.bg-exit{
+  position: absolute;
+  cursor: pointer;
+  z-index: 1000;
+	}
+
+#si-exit {
+cursor: pointer;
+}
+/*animation ISI*/
+.content #ISI-wrap{width: 300px; height:175px; margin-top: 88px; float:right; display: inline-block;}
+
+/*.isi-header{background: url(../images/ISI-header.png) no-repeat; width: 270px; height: 13px; background-size: 276px 13px;}*/
+/*#ISI-wrap header h2{background: url(ISI-header.png) no-repeat; 
+	width: 270px; 
+	height: 13px; 
+	z-index: 1000; 
+	background-size: 300px 13px;
+    cursor: pointer;
+    }
+
+#ISI-wrap footer h2{
+	background: url(ISI-footer.png) no-repeat; 
+	width: 290px; 
+	height: 13px; 
+	margin-top: 0px;  
+	background-size: 300px 13px;
+	cursor: pointer;
+	z-index: 1000;
+	position: relative;
+    top: 60px;*/
+    /*****************hide for ISI screen grab mode********************/
+/*visibility: hidden;*/
+   
+#ISI-wrap .ISI-scroll p.bwarntxt{font-weight: 700; width: 230px; }
+#ISI-wrap .ISI-scroll p{font-family: arial, sans-serif; font-size: 0.85em; 
+font-weight: normal;
+line-height: normal; 
+color: #000; 
+width: 279px; 
+margin: 5px 
+auto 0 -15px; 
+}
+#ISI-wrap .ISI-scroll p a{color: #000000; text-decoration: underline;}
+#ISI-wrap .ISI-scroll p a.bold{font-weight: bold; margin-left:1px; }
+/*#ISI-wrap .ISI-scroll p.first{margin-top: 0px; margin-left: 1px;}*/
+#ISI-wrap .ISI-scroll p.last{padding-bottom: 4px; padding-right: 1px; width: 270px; text-align: left;}
+/*for star indent*/
+#ft p {
+  position: relative;
+  margin-left: 10px !important;
+}
+#ft a {
+  position: absolute;
+  top: 0;
+  left: -19px;
+  display: block;
+  width: 1.5em;
+  text-align: right;
+  text-decoration: none !important;
+}
+

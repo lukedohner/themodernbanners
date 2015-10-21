@@ -1,0 +1,233 @@
+<head>
+<meta charset="utf-8">
+<title>theModern_HTML5_300x600</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta property="og:type" content="website" />
+<link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="media.css" />
+<script src="modernizr.2.6.2-min.js"></script>
+
+<script src="TimelineLite.js"></script>
+<script src="TweenLite.js"></script>
+<script src="CSSPlugin.js"></script>
+
+<!-- <script src="jquery.gsap.js"></script> -->
+<script src="jquery.js"></script>
+<script src="zepto.js"></script>
+<script src="utils.js"></script>
+<script
+    type="text/javascript"
+    src="https://s0.2mdn.net/ads/studio/Enabler.js">    
+</script>
+
+<script>
+
+// If true, start function. If false, listen for INIT.
+if (Enabler.isInitialized()) {
+    enablerInitHandler();
+    console.log("Enabler.isInitialized");
+} else {
+    Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+}
+
+function enablerInitHandler() {
+    // Start ad, initialize animation,
+    // load in your image assets, call Enabler methods,
+    // and/or include other Studio modules.
+    console.log("enablerInitHandler");
+}
+window.onload = function() {
+  var cta = $( "#cta" );
+      }
+</script>
+</head>
+
+<body onload ="onLoad()" class="banner">
+
+    <div id="wrapper" role="main">
+
+
+        <section class="content wrap-max" id="content">
+
+            <div class="bg-exit" id="bg-exit"></div>
+            <hr id="hr"> </hr>
+            <!-- copy 1   ////// -->
+            <div class="headlinetx1" id="headlinetx1">
+            <div class="half" id="half">half</div><div class="the" id="the">the</div><div class="rent" id="rent">rent</div>
+            </div>            
+            <div class="imageone" id="imageone"></div>
+             <!-- copy 2   ////// -->
+            <div class="headlinetx2" id="headlinetx2">
+            <div class="twice" id="twice">twice</div><div class="the2" id="the2">the</div><div class="luxury" id="luxury">luxury</div>
+            </div>            
+            <div class="imagetwo" id="imagetwo"></div>
+            <!-- copy 3   ////// -->
+            <div class="headlinetx3" id="headlinetx3">10 MINUTES VIA SHUTTLE</div>
+             <div class="headlinetx4" id="headlinetx4">TO MANHATTAN SUBWAY</div>
+            <div class="imagethree" id="imagethree"></div>
+             <!-- last frame   ////// -->
+            <div class="headlinetx5" id="headlinetx5">LUXURY RENTALS</div>
+            <div class="headlinetx6" id="headlinetx6">IN FORT LEE</div>
+            <div class="headlinetx7" id="headlinetx7">NO FEE FROM $2,420/MO</div>
+            <div class="logo" id="logo"></div>
+            <div class="imagefour" id="imagefour"></div>
+            <div class="cta" id="cta"><div class="ctatext">learn more</div></div>
+
+            
+   </div><!-- end wrapper -->
+  </section><!--end .content-->
+
+<script type="text/javascript">
+ 
+var xnum = 5;
+
+var xnumtwo = -10;
+var xnumtworeturn = xnumtwo-xnumtwo;
+var ynum = 20;
+var ynumreturn = ynum-ynum;
+
+var ynumtwo = -10;
+var ynumtworeturn = ynumtwo-ynumtwo;
+
+
+var tl = new TimelineLite();
+//show copy 1
+tl.to(logo, 1, {y:ynumtworeturn, scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(half, .2, {y:ynumreturn, scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(the, .2, {y:ynumreturn,scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(rent, .2, {y:ynumreturn,scaleX:1, scaleY:1, autoAlpha:1});
+
+//hide copy 1
+
+tl.to(half, .5, {scaleX:1, scaleY:1, autoAlpha:0, delay:2.5});
+tl.to(the, .3, {scaleX:1, scaleY:1, autoAlpha:0, delay:0});
+tl.to(rent, .3, {scaleX:1, scaleY:1, autoAlpha:0, delay:0});
+tl.to(imageone, .2, {scaleX:1, scaleY:1, autoAlpha:0, delay:0});
+
+//show copy 2
+tl.to(imagetwo, .2, {scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(twice, .3, {scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(the2, .3, {scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(luxury, .3, {scaleX:1, scaleY:1, autoAlpha:1});
+
+//hide copy 2
+tl.to(twice, .5, {scaleX:1, scaleY:1, autoAlpha:0, delay:2});
+tl.to(the2, .2, {scaleX:1, scaleY:1, autoAlpha:0, delay:0});
+tl.to(luxury, .2, {scaleX:1, scaleY:1, autoAlpha:0, delay:0});
+tl.to(imagetwo, .2, {scaleX:1, scaleY:1, autoAlpha:0, delay:0});
+
+//show copy 3
+tl.to(imagethree, .2, {scaleX:1, scaleY:1, autoAlpha:1, delay:-.5});
+tl.to(headlinetx3, .5, {y:ynumtworeturn, scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(headlinetx4, .5, {y:ynumtworeturn, scaleX:1, scaleY:1, autoAlpha:1});
+
+//hide copy 3
+tl.to(headlinetx3, .5, {scaleX:1, scaleY:1, autoAlpha:0, delay:2});
+tl.to(headlinetx4, .5, {scaleX:1, scaleY:1, autoAlpha:0});
+tl.to(imagethree, .2, {scaleX:1, scaleY:1, autoAlpha:0, delay:0});
+
+//show last frame
+
+tl.to(hr, .5, {autoAlpha:0});
+// tl.to(logo, 1, {x:xnumtworeturn, scaleX:1, scaleY:1, autoAlpha:1, delay:0});
+tl.to(headlinetx5, .5, {y:ynumtworeturn, scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(headlinetx6, .5, {y:ynumtworeturn, scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(headlinetx7, .5, {y:ynumtworeturn, scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(cta, .5, {y:ynumtworeturn, scaleX:1, scaleY:1, autoAlpha:1});
+tl.to(imagefour, .5, {y:ynumreturn, scaleX:1, scaleY:1, autoAlpha:1});
+
+tl.pause();
+
+//timeline for roll over -cta animation
+var tlcta = new TimelineLite();
+//tlcta.play();
+tlcta.pause();
+tlcta.to(cta, .1, {scaleX:1.1, scaleY:1.1});
+tlcta.to(cta, .1, {scaleX:1, scaleY:1});
+
+
+
+// true to upload to Double click
+ var fordoubleclick = true //bool
+ var myScroll;
+ function onLoad(){
+initme();
+tl.play();
+console.log("function onLoad");
+// upload to Double Click
+function readyfordd(e) {
+    console.log("fired readyfordd");
+
+     if (fordoubleclick) {
+     console.log("fired readyfordd + fordoubleclick is true");
+     document.getElementById("wrapper").style.border = "1px solid #333 border-box";
+     // document.getElementById("wrapper").style.border = "none";
+     
+     } else {
+     console.log("fordoubleclick is false");
+    }
+}
+      
+function initme(){
+  TweenLite.to(logo, 0, {y:ynumtwo, scaleX:1, scaleY:1, autoAlpha:0});
+  TweenLite.to(hr, 0, {scaleX:1, scaleY:1, autoAlpha:1});
+  //copy 1
+  TweenLite.to(half, 0, {y:ynum, scaleX:0.0, scaleY:0.0, autoAlpha:0});
+  TweenLite.to(the, 0, {y:ynum, scaleX:0.0, scaleY:0.0, autoAlpha:0});
+  TweenLite.to(rent, 0, {y:ynum, scaleX:0.0, scaleY:0.0, autoAlpha:0});
+  //copy 2
+  TweenLite.to(imagetwo, 0, {scaleX:1, scaleY:1, autoAlpha:0});
+  TweenLite.to(twice, 0, {scaleX:0.5, scaleY:0.5, autoAlpha:0});
+  TweenLite.to(the2, 0, {scaleX:0.5, scaleY:0.5, autoAlpha:0});
+  TweenLite.to(luxury, 0, {scaleX:0.5, scaleY:0.5, autoAlpha:0});
+  //copy 3
+  TweenLite.to(imagethree, 0, {scaleX:1, scaleY:1, autoAlpha:0});
+  TweenLite.to(headlinetx3, 0, {y:ynumtwo,scaleX:1, scaleY:1, autoAlpha:0});
+  TweenLite.to(headlinetx4, 0, {y:ynumtwo,scaleX:1, scaleY:1, autoAlpha:0});
+  //last frame
+  //TweenLite.to(hr, 0, {autoAlpha:0});
+  TweenLite.to(headlinetx5, 0, {y:ynumtwo,scaleX:1, scaleY:1, autoAlpha:0});
+  TweenLite.to(headlinetx6, 0, {y:ynumtwo,scaleX:1, scaleY:1, autoAlpha:0});
+  TweenLite.to(headlinetx7, 0, {y:ynumtwo,scaleX:1, scaleY:1, autoAlpha:0});
+  
+  TweenLite.to(imagefour, 0, {y:ynum, scaleX:1, scaleY:1, autoAlpha:0});
+  TweenLite.to(cta, 0, {y:ynumtwo, scaleX:1, scaleY:1, autoAlpha:0});
+  console.log("function init");
+}
+
+
+// readyfordd();
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+    
+    // Main click Thru
+    function bgExitHandler(e) {
+    console.log("fired bgExitHandler");
+
+     if (fordoubleclick) {
+     console.log("fordoubleclick is true");
+     // Enable when uplaoding to Double Click Studio
+     Enabler.exit('Background Exit');
+     } else {
+     console.log("fordoubleclick is false");
+    // Disable when uplaoding to Double Click Studio
+     Enabler.exitOverride('Background Exit', 'http://www.bexsero.com/index.shtml');
+     }
+    }
+   function bgExitOver(e) {
+    console.log("fired bgExitOver");
+    //play cta animation
+    //tlcta.play();
+    tlcta.restart();
+   }
+
+document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
+document.getElementById("bg-exit").addEventListener("mouseover", bgExitOver); 
+
+}
+</script>
+</div><!--end #main-->
+</body>
+</html>
+<!-- <script src="app.js"></script> -->
